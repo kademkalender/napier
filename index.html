@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Napier'in Kemikleri</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/napierbones.js"></script>
+	<script type="text/javascript" src="js/similator.js"></script>
+</head>
+<body onload="run();">
+	<header>
+		<h1 class="baslik">Napier</h1>
+		<ul>
+			<li class="li"><a href="#napier">Napier'in Kemikleri Nedir?</a></li>
+			<li class="li"><a href="#carpma">Çarpma</a></li>
+			<li class="li"><a href="#bolme">Bölme</a></li>
+			<li class="li"><a href="#simulator">Simülatör</a></li>
+		</ul>
+	</header>
+	<section class="content-container">
+	<h1 class="baslik">Napier Kimdir?</h1>
+	<img src="https://www.ilkkimbuldu.com/wp-content/uploads/2018/09/john-napier.jpg" alt="John Napier" width="690" height="380">
+	<p class="yazilar">
+		John Napier veya latince Neper, (d. 1 Şubat 1550, Merchiston-Edinburgh - ö. 4 Nisan 1617, Merchiston Castle), Merchiston Baronu ve İskoçyalı bir matematikçi olan Napier, logaritmanın bulucusu olarak bilinir.
+	</p>
+	<p class="yazilar">
+		Napier, Saint Andrews Üniversitesinde eğitim görmüş ve matematiği de içinden gelen bir merak olarak izlemiştir. Kendisi, amatör bir matematikçidir. Sayısal hesaplamaları kolaylaştıracak bir yol ararken, önce Napier'in kemikleri diye bilinen, üzerinde rakamlar yazılmış küçük değnekler yardımıyla yapılan bir çarpma veya bölme yöntemi buldu. 1, 2, 3,... şeklindeki aritmetik dizi ile, buna karşılık gelen 10, 100, 1000,... biçimindeki geometrik dizi arasındaki, ilişkiyi gördü. 1614 yılında yazdığı "Logaritma Kurallarının Tanımı" adlı eserinde, aritmetik dizi ile geometrik dizinin karşılaştırılmasından, matematiğe logaritma kavramını getirdi. Günümüzdekilerden farklı olarak kurulan bu diziler, logaritmayı, sayısının azalan bir fonksiyonu olarak tanımlıyordu. Buradaki aritmetik dizi, geometrik dizinin logaritmasıdır.
+	</p>
+	<p class="yazilar">
+		Oxford Üniversitesi matematik profesörü Henri Briggs, Napier'in bu buluşunu benimsedi ve adı log cetvelinin hazırlanmasıyla ilgili düşüncelerini Napier'e açıklamak için Edinburgh'a gitti. Napier, 1618 ve 1624 yılları arasında kusursuz iki logaritma cetveli yayınladı. Bu eser onun tam yirmi yıllık bir çalışmasının ürünüdür. Napier'in bu konuda çok sayıda eseri vardır. Bazı hesap makinelerinin temellerini veren iki kitabı, 1617 yılında yayınlandı.
+	</p>
+	
+	<h1 class="baslik" id="napier">Napier'in Kemikleri Nedir?</h1>
+	<p class="yazilar">
+		Napier'in kemikleri, John Napier tarafından oluşturulan bir abaküstür. Pratik olarak çarpma, bölme ve karekök alma işlemleri için kullanılabilir. Napier, bu eserini Rabdology adıyla 1617 sonunda, İskoçya Edinburgh'da yayınlanmıştır. Napier'in kemikleri, Napier'in adıyla ilişkili olan logaritma ile aynı şey değildir
+	</p>
+	<p class="yazilar">
+		Abaküs bir tahta ve bir çerçeveden oluşur. Kullanıcı, Napier’in çubuklarını çarpma veya bölmeyi yapmak için bu çerçeveli tahtaya yerleştirir. Tahtanın sol kenarı, 1 den 9’a kadar numaraları içeren 9 kareye bölünmüştür. Napier'in çubukları, ahşap çubuklar, metal veya kartondan oluşur. Bir çubuk yüzeyinde 9 kare vardır. En üstteki hariç diğer kareler sağ üst köşeden sol alt köşeye doğru köşegen şekilde ikiye ayrılmıştır</p>.
+	<p class="yazilar"> En üstteki karede tek rakam vardır.Diğer karelerde en üstteki rakamın iki katı, üç katı, dört katı, beş katı ve böylece son kareye kadar dokuz katı yer alacak şekilde çift rakam bulunur.Bu set 0 dan 9 a kadar 10 çubuktan oluşur.
+	</p>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Bones_of_Napier_%28board_and_rods%29.png" alt="Çarpma" width="360" height="380">
+
+	<h1 class="baslik">Hangi işlemlerde kullanılır;</h1>
+	
+	<h2 class="altbaslik" id="carpma">Çarpma;</h2>
+	<p class="yazilar">İlk olarak aşağıdaki videodan çarpmanın nasıl yapıldınığını izleyelim ardından ise yazılı olarak inceleyebilirisniz;</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/51WZQVevJL4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<p class="yazilar">Verilen çubuklar kümesi 46785399 ile 7'nin çarpımını hesaplayabilmek için belirlenmiştir. Çarpan olan 7'nin bulunduğu satırdan sonuç yatay olarak tablonun sağındaki stripten okunur. Stripin içindeki rakamlar en sağdan başlanarak köşegenel olarak toplanarak sonuç bulunur. (Bulunan toplam 10 veya üzeri ise elde var olarak bir sonraki toplama eklenir.)</p>
+	
+	<img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Napier-example-1.png" alt="Tablo" width="800" height="240">
+	<p class="yazilar">Bu yönteme uygun olarak bir önceki sayıyı şimdi de 96431 ile çarpımını bulmak için; çubuklar aynı şekilde dizilir. İkinci çarpanın birler basamağından başlamak üzere karşılığı olan satırlardaki rakamlar yukarıda anlatıldığı gibi köşegenel toplanarak alt alta ve her biri birer basamak sola kaydırılarak toplama suretiyle sonuç bulunur.
+	</p>
+
+	<img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Napier_example_2.png" alt="işlem" width="600" height="270">
+
+	<h2 class="altbaslik" id="bolme">Bölme;</h2>
+	
+	<p class="yazilar">Bölme benzer şekilde yapılabilir. Diyelim ki, 46785399 u 96431 e böleceğiz. Bu iki sayıyı önceki örnekte kullanmıştık. Bölen (96.431) için çubukları tablodaki gibi yerleştirin.</p>
+	
+	<p class="yazilar">Abaküsü kullanarak, bölen için 1 den 9 a kadarki satırların köşegenel toplamlarını bulun. (tablonun sağında gösterilmiştir) Bölünen 8 basamaklıdır. Köşegenel toplamlar sonucu bulunan sayılar ise ilki hariç 6 basamaklı olduklarından bölünenin son iki rakamı (99) geçici olarak dikkate alınmayacaktır. Böylece kısaltılmış bölünen 467853 den küçük olan en büyük toplamı bulun.</p> 
+	
+	<p class="yazilar">Bu toplamın 385724 bulunduğu satırın başındaki rakam yani 4 bölümün ilk rakamı olarak bulunur.Şimdi bulunan bu kısmi sonucu 385724 sola hizalayarak bölünenin altına yazın ve farkını 8212999 olarak bulun. Bu değerde 6 basamaktan fazla olduğundan yine soldan 6 rakamını dikkate alın ve yukarıdaki işemi yineleyerek 821299 için 771448 i bulun. Bu da 8 inci satırda olduğundan bölümün ikinci rakamı da 8 olur. Bu işlem kalan(en sol altta) bölenden küçük olana kadar devam eder ve bölüm 485 olarak bulunur. Kalan 16364 dür.</p>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Napier-example-3.png" alt="bölme" width="570" height="240">
+	<h2 class="altbaslik" id="simulator">Simülatör;</h2>
+	<div id="myNapierBones" class="center"></div>
+</section>
+</body>
+</html>
